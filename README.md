@@ -1,3 +1,3 @@
 # GenuinoVitto.github.io
 
-Add #BlackLivesMatter Banner on top of webpage
+Software Developer Portfolio - Genuino, Jose Mari Victorio Gonzales | 2022
