@@ -17,7 +17,7 @@ a{
     align-items:flex-start;
     align-content:flex-start;
     height:25vw;
-    min-height:400px;
+    min-height:600px;
     max-height:800px;
     min-width:300px;
     color:rgb(0, 0, 0);
@@ -26,6 +26,12 @@ a{
 
 .header a{
     color:rgb(0, 0, 0)
+}
+
+.logo {
+    width: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .sides, .info{
