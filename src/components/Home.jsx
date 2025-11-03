@@ -12,7 +12,7 @@ function Home() {
         <div className="content-greeting">
           <h1 className="greeting">Hello, I'm Vitto</h1>
           <p className="sub-greeting">Get a copy of my resume to see my credentials</p>
-          <a href="src\assets\Resume - Genuino, Jose Mari Victorio G..pdf" download className="download-btn">Download resume 👨‍💻</a>
+          <a href="\Resume - Genuino, Jose Mari Victorio G..pdf" download className="download-btn">Download resume 👨‍💻</a>
         </div>
       </section>
 
