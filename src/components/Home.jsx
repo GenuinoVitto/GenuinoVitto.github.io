@@ -19,7 +19,7 @@ function Home() {
       <section className="about-me">
         <h2>About Me</h2>
         <p>
-          I'm Vitto Genuino, a passionate developer with experience in building web applications.
+          I'm Vitto Genuino, a passionate developer with experience in data pipelines and building web applications.
         </p>
         
         <div className="timeline-container">
