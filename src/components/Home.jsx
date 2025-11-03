@@ -6,7 +6,7 @@ function Home() {
     <div className="content">
       <section className="hero">
         <div className="home-image">
-          <img className="vitto-img" src="src\assets\DSCF0100.jpg" alt="Vitto Genuino" />
+          <img className="vitto-img" src="\DSCF0100.jpg" alt="Vitto Genuino" />
         </div>
 
         <div className="content-greeting">
