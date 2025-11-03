@@ -3,11 +3,10 @@ import { createRoot } from 'react-dom/client'
 import { Provider } from "@/components/ui/provider"
 import './index.css'
 import App from './App.jsx'
-import theme from './theme.js'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Provider theme={theme}>
+    <Provider defaultTheme="light">
       <App />
     </Provider>
   </StrictMode>,
