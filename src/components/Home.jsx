@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Card, Heading, Stack, Text, Timeline } from "@chakra-ui/react"
+import { Badge, Box, Button, Card, HStack, Image, Heading, Stack, Text, Timeline } from "@chakra-ui/react"
 import { LuCheck, LuPackage, LuShip, LuNotebook, LuLinkedin, LuInstagram } from "react-icons/lu"
 function Home() {
   return (
@@ -21,6 +21,7 @@ function Home() {
         <p>
           I'm Vitto Genuino, a passionate developer with experience in building web applications.
         </p>
+        
         <Timeline.Root maxW="600px">
           <Timeline.Item>
             <Timeline.Connector>
@@ -30,11 +31,10 @@ function Home() {
               </Timeline.Indicator>
             </Timeline.Connector>
             <Timeline.Content>
-              <Timeline.Title>Product Shipped</Timeline.Title>
-              <Timeline.Description>13th May 2021</Timeline.Description>
+              <Timeline.Title>Entered College at De La Salle University - Manila</Timeline.Title>
+              <Timeline.Description>September 2019</Timeline.Description>
               <Text textStyle="sm">
-                We shipped your product via <strong>FedEx</strong> and it should
-                arrive within 3-5 business days.
+                Pursued a Bachelor's degree in Industrial Economics
               </Text>
             </Timeline.Content>
           </Timeline.Item>
@@ -47,8 +47,8 @@ function Home() {
               </Timeline.Indicator>
             </Timeline.Connector>
             <Timeline.Content>
-              <Timeline.Title textStyle="sm">Order Confirmed</Timeline.Title>
-              <Timeline.Description>18th May 2021</Timeline.Description>
+              <Timeline.Title textStyle="sm">Shifted to Computer Science Majoring in Software Technology</Timeline.Title>
+              <Timeline.Description>May 2020</Timeline.Description>
             </Timeline.Content>
           </Timeline.Item>
 
@@ -60,8 +60,65 @@ function Home() {
               </Timeline.Indicator>
             </Timeline.Connector>
             <Timeline.Content>
-              <Timeline.Title textStyle="sm">Order Delivered</Timeline.Title>
-              <Timeline.Description>20th May 2021, 10:30am</Timeline.Description>
+              <Timeline.Title textStyle="sm">Entered the Dr. Andrew L. Tan Data Science Institute</Timeline.Title>
+              <Timeline.Description>January 2023</Timeline.Description>
+              <Text textStyle="sm">Employed as a Research Assistant</Text>
+            </Timeline.Content>
+          </Timeline.Item>
+
+          <Timeline.Item>
+            <Timeline.Connector>
+              <Timeline.Separator />
+              <Timeline.Indicator>
+                <LuPackage />
+              </Timeline.Indicator>
+            </Timeline.Connector>
+            <Timeline.Content>
+              <Timeline.Title textStyle="sm">Entered Senti AI</Timeline.Title>
+              <Timeline.Description>March 2023</Timeline.Description>
+              <Text textStyle="sm">Employed as a Web Developer</Text>
+            </Timeline.Content>
+          </Timeline.Item>
+
+          <Timeline.Item>
+            <Timeline.Connector>
+              <Timeline.Separator />
+              <Timeline.Indicator>
+                <LuPackage />
+              </Timeline.Indicator>
+            </Timeline.Connector>
+            <Timeline.Content>
+              <Timeline.Title textStyle="sm">Exited the Dr. Andrew L. Tan Data Science Institute</Timeline.Title>
+              <Timeline.Description>April 2023</Timeline.Description>
+              <Text textStyle="sm">Project Finished</Text>
+            </Timeline.Content>
+          </Timeline.Item>
+
+          <Timeline.Item>
+            <Timeline.Connector>
+              <Timeline.Separator />
+              <Timeline.Indicator>
+                <LuPackage />
+              </Timeline.Indicator>
+            </Timeline.Connector>
+            <Timeline.Content>
+              <Timeline.Title textStyle="sm">Exited Senti AI</Timeline.Title>
+              <Timeline.Description>August 2023</Timeline.Description>
+              <Text textStyle="sm">Project Finished</Text>
+            </Timeline.Content>
+          </Timeline.Item>
+
+          <Timeline.Item>
+            <Timeline.Connector>
+              <Timeline.Separator />
+              <Timeline.Indicator>
+                <LuPackage />
+              </Timeline.Indicator>
+            </Timeline.Connector>
+            <Timeline.Content>
+              <Timeline.Title textStyle="sm">Entered LENA - Lately, Everything Needs Analytics</Timeline.Title>
+              <Timeline.Description>May 2024</Timeline.Description>
+              <Text textStyle="sm">Employed as Data Engineer Intern</Text>
             </Timeline.Content>
           </Timeline.Item>
         </Timeline.Root>
@@ -69,38 +126,33 @@ function Home() {
 
       <section className="projects">
         <h2>Projects</h2>
-        {/* <Stack>
-          <Card.Root size="md">
-            <Card.Header>
-              <Heading size="md"> Card - sm</Heading>
-            </Card.Header>
-            <Card.Body color="fg.muted">
-              This is the card body. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </Card.Body>
+        <Stack className="project-cards">
+          <Card.Root flexDirection="row" overflow="hidden" maxW="xl">
+            <Image
+              objectFit="cover"
+              maxW="200px"
+              src="https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+              alt="Caffe Latte"
+            />
+            <Box>
+              <Card.Body>
+                <Card.Title mb="2">The perfect latte</Card.Title>
+                <Card.Description>
+                  Caffè latte is a coffee beverage of Italian origin made with espresso
+                  and steamed milk.
+                </Card.Description>
+                <HStack mt="4">
+                  <Badge>Hot</Badge>
+                  <Badge>Caffeine</Badge>
+                </HStack>
+              </Card.Body>
+              <Card.Footer>
+                <Button>Buy Latte</Button>
+              </Card.Footer>
+            </Box>
           </Card.Root>
-
-          <Card.Root size="md">
-            <Card.Header>
-              <Heading size="md"> Card - md</Heading>
-            </Card.Header>
-            <Card.Body color="fg.muted">
-              This is the card body. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </Card.Body>
-          </Card.Root>
-
-          <Card.Root size="md">
-            <Card.Header>
-              <Heading size="md"> Card - lg</Heading>
-            </Card.Header>
-            <Card.Body color="fg.muted">
-              This is the card body. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit.
-            </Card.Body>
-          </Card.Root>
-        </Stack> */}
-        <Link to="/projects">See more</Link>
+        </Stack>
+        <Link to="/projects" className="see-more">See more</Link>
       </section>
 
     <hr></hr>
